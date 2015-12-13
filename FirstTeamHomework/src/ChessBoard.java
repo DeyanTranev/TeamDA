@@ -5,39 +5,7 @@ public class ChessBoard {
 	int row;
 	int col;
 	char[][] board;
-	
 
-	void knightMove(int row, int col) {
-		board[row][col] = 'k';
-		if (row+2<totalRows && col+1<totalCols && board[row+2][col+1] != 'k') {
-
-			knightMove(row+2, col+1);
-		} else if (row+2<totalRows && col-1>=0 && board[row+2][col-1] != 'k') {
-
-			knightMove(row+2, col-1);
-		} else if (row+1<totalRows && col+2<totalCols && board[row+1][col+2] != 'k') {
-			;
-			knightMove(row+1, col+2);
-		} else if (row+1<totalRows && col-2>=0 && board[row+1][col-2] != 'k') {
-
-			knightMove(row+1, col-2);
-		} else if (row-2>=0 && col-1>=0 && board[row-2][col-1] != 'k') {
-
-			knightMove(row-2, col-1);
-		} else if (row-2>=0 && col+1<totalCols && board[row-2][col+1] != 'k') {
-
-
-		} else if (row-1>=0 && col-2>=0 && board[row-1][col-2] != 'k') {
-
-			knightMove(row-1, col-2);
-		} else if (row-1>=0 && col+2<totalCols && board[row-1][col+2] != 'k') {
-
-			knightMove(row-1, col+2);
-		}
-		else {
-			return;
-		}
-	}
 	void moveKnight(int row, int col) {
 		
 		

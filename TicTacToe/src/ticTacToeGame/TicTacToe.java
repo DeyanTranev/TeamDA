@@ -1,4 +1,4 @@
-package TicTacToeGame;
+package ticTacToeGame;
 
 public class TicTacToe {
 	char[][] tBoard;
@@ -121,5 +121,4 @@ public class TicTacToe {
 		}
 	}
 }
-
 
